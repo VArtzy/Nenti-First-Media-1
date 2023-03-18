@@ -10,37 +10,32 @@ navbarToggle.addEventListener("click", () => {
 })
 
 // Register IntersectionObserver
-const io = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.intersectionRatio > 0) {
-                // Add 'active' class if observation target is inside viewport
-                if (entry.target.classList.contains("meter-1")) {
-                    entry.target.classList.add("rotate-45")
-                }
-                if (entry.target.classList.contains("meter-2")) {
-                    entry.target.classList.add("rotate-90")
-                }
-                if (entry.target.classList.contains("meter-3")) {
-                    entry.target.classList.add("rotate-180")
-                }
-            } else {
-                if (entry.target.classList.contains("meter-1")) {
-                    entry.target.classList.remove("rotate-45")
-                }
-                if (entry.target.classList.contains("meter-2")) {
-                    entry.target.classList.remove("rotate-90")
-                }
-                if (entry.target.classList.contains("meter-3")) {
-                    entry.target.classList.remove("rotate-180")
-                }
+const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // Add 'active' class if observation target is inside viewport
+            if (entry.target.classList.contains("meter-1")) {
+                entry.target.classList.add("rotate-45")
             }
-        })
-    },
-    {
-        threshold: 0.5,
-    }
-)
+            if (entry.target.classList.contains("meter-2")) {
+                entry.target.classList.add("rotate-90")
+            }
+            if (entry.target.classList.contains("meter-3")) {
+                entry.target.classList.add("rotate-180")
+            }
+        } else {
+            if (entry.target.classList.contains("meter-1")) {
+                entry.target.classList.remove("rotate-45")
+            }
+            if (entry.target.classList.contains("meter-2")) {
+                entry.target.classList.remove("rotate-90")
+            }
+            if (entry.target.classList.contains("meter-3")) {
+                entry.target.classList.remove("rotate-180")
+            }
+        }
+    })
+})
 
 // Declares what to observe, and observes its properties.
 const boxElList = document.querySelectorAll(".meter")
