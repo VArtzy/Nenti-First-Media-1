@@ -15,23 +15,23 @@ const io = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             // Add 'active' class if observation target is inside viewport
             if (entry.target.classList.contains("meter-1")) {
-                entry.target.classList.add("rotate-45")
+                entry.target.style["rotate"] = "45deg"
             }
             if (entry.target.classList.contains("meter-2")) {
-                entry.target.classList.add("rotate-90")
+                entry.target.style["rotate"] = "90deg"
             }
             if (entry.target.classList.contains("meter-3")) {
-                entry.target.classList.add("rotate-180")
+                entry.target.style["rotate"] = "180deg"
             }
         } else {
             if (entry.target.classList.contains("meter-1")) {
-                entry.target.classList.remove("rotate-45")
+                entry.target.style["rotate"] = "0deg"
             }
             if (entry.target.classList.contains("meter-2")) {
-                entry.target.classList.remove("rotate-90")
+                entry.target.style["rotate"] = "0deg"
             }
             if (entry.target.classList.contains("meter-3")) {
-                entry.target.classList.remove("rotate-180")
+                entry.target.style["rotate"] = "0deg"
             }
         }
     })
