@@ -1,0 +1,137 @@
+<div class="cards grid grid-col-3">
+                <div class="card">
+                    <h3>STREAM VALUE</h3>
+                    <div class="flex no-gap no-bet">
+                        <h4>Rp.275.000</h4>
+                        <p>/bulan</p>
+                        <div class="">
+                            <p>
+                                <span class="text-lg">30</span> Mbps +
+                                <span class="text-lg">112</span> Channel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="badge badge-primary">
+                        Speed Internet Up To <span class="text-lg">25Mbps</span>
+                    </div>
+                    <div class="badge badge-secondary">
+                        <span class="text-lg">112</span> Channel TV kualitas SD & HD
+                    </div>
+        <a href="" class="mx-auto"><img class="cta mx-auto" src="img/WhatsAppButtonGreenMedium.png" alt="Chat to whatsapp"></a>
+                </div>
+                <div class="card">
+                    <h3>COMBO FAMILY PLUS POP ATTACK HD</h3>
+                    <div class="flex no-gap no-bet">
+                        <h4>Rp.364.100</h4>
+                        <p>/bln</p>
+                        <div class="">
+                            <p>
+                                <span class="text-lg">50</span> Mbps +
+                                <span class="text-lg">112</span> Channel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="badge badge-primary">
+                        Speed Internet Up To <span class="text-lg">50Mbps</span>
+                    </div>
+                    <div class="badge badge-secondary">
+                        <span class="text-lg">112</span> Channel TV kualitas SD & HD
+                    </div>
+                    <div class="badge badge-accent">
+                    Bonus All Channel Selama <span class="text-lg">3 Bulan</span>
+                </div>
+        <a href="" class="mx-auto"><img class="cta mx-auto" src="img/WhatsAppButtonGreenMedium.png" alt="Chat to whatsapp"></a>
+                </div>
+            <div class="card">
+                <h3>COMBO DLITE HD</h3>
+                <div class="flex no-gap no-bet">
+                    <h4>Rp.473.330</h4>
+                    <p>/bln</p>
+                    <div class="">
+                        <p>
+                            <span class="text-lg">35</span> Mbps +
+                            <span class="text-lg">121</span> Channel
+                        </p>
+                    </div>
+                </div>
+                <div class="badge badge-primary">
+                    Speed Internet Up To <span class="text-lg">35Mbps</span>
+                </div>
+                <div class="badge badge-secondary">
+                    <span class="text-lg">121</span> Channel TV kualitas SD & HD
+                </div>
+                <div class="badge badge-accent">
+                    Bonus All Channel Selama <span class="text-lg">3 Bulan</span>
+                </div>
+    <a href="" class="mx-auto"><img class="cta mx-auto" src="img/WhatsAppButtonGreenMedium.png" alt="Chat to whatsapp"></a>
+            </div>
+            <div class="card">
+                <h3>COMBO ELITE POP X1 4K</h3>
+                <div class="flex no-gap no-bet">
+                    <h4>Rp.551.980</h4>
+                    <p>/bln</p>
+                    <div class="">
+                        <p>
+                            <span class="text-lg">100</span> Mbps +
+                            <span class="text-lg">143</span> Channel
+                        </p>
+                    </div>
+                </div>
+                <div class="badge badge-primary">
+                    Speed Internet Up To <span class="text-lg">100Mbps</span>
+                </div>
+                <div class="badge badge-secondary">
+                    <span class="text-lg">143</span> Channel TV kualitas SD & HD
+                </div>
+                <div class="badge badge-accent">
+                    Bonus All Channel Selama <span class="text-lg">3 Bulan</span>
+                </div>
+    <a href="" class="mx-auto"><img class="cta mx-auto" src="img/WhatsAppButtonGreenMedium.png" alt="Chat to whatsapp"></a>
+            </div>
+            <div class="card">
+                <h3>COMBO SUPREME X1 POP 4K</h3>
+                <div class="flex no-gap no-bet">
+                    <h4>Rp.790.680</h4>
+                    <p>/bln</p>
+                    <div class="">
+                        <p>
+                            <span class="text-lg">150</span> Mbps +
+                            <span class="text-lg">166</span> Channel
+                        </p>
+                    </div>
+                </div>
+                <div class="badge badge-primary">
+                    Speed Internet Up To <span class="text-lg">150Mbps</span>
+                </div>
+                <div class="badge badge-secondary">
+                    <span class="text-lg">166</span> Channel TV kualitas SD & HD
+                </div>
+                <div class="badge badge-accent">
+                    Bonus All Channel Selama <span class="text-lg">3 Bulan</span>
+                </div>
+    <a href="" class="mx-auto"><img class="cta mx-auto" src="img/WhatsAppButtonGreenMedium.png" alt="Chat to whatsapp"></a>
+            </div>
+            <div class="card">
+                <h3>COMBO MAXIMA X1 4K</h3>
+                <div class="flex no-gap no-bet">
+                    <h4>Rp.1.504.525</h4>
+                    <p>/bln</p>
+                    <div class="">
+                        <p>
+                            <span class="text-lg">200</span> Mbps +
+                            <span class="text-lg">166</span> Channel
+                        </p>
+                    </div>
+                </div>
+                <div class="badge badge-primary">
+                    Speed Internet Up To <span class="text-lg">200Mbps</span>
+                </div>
+                <div class="badge badge-secondary">
+                    <span class="text-lg">166</span> Channel TV kualitas SD & HD
+                </div>
+                <div class="badge badge-accent">
+                    <span class="text-lg">Open</span> All Channel Selama <span class="text-lg">3 Bulan</span>
+                </div>
+    <a href="" class="mx-auto"><img class="cta mx-auto" src="img/WhatsAppButtonGreenMedium.png" alt="Chat to whatsapp"></a>
+            </div>
+        </div>

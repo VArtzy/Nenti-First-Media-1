@@ -1,0 +1,601 @@
+:root {
+    --primary-clr: #1e2749;
+    --secondary-clr: #273469;
+    --light-clr: #fafaff;
+    --neutral-clr: #e4d9ff;
+    --dark-clr: #30343f;
+    --border: 5px;
+    --border-sm: 3px;
+    --gap: 4em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+.mx-auto {
+    margin-block: auto;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.cta {
+    margin: auto;
+    max-width: 200px;
+}
+
+.navbar-toggle {
+    border: none;
+    display: none;
+    background-color: transparent;
+    color: var(--primary-clr);
+    font-size: 18px;
+    padding: 7px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-bar {
+    display: block;
+    width: 44px;
+    border-radius: var(--border-sm);
+    height: 4px;
+    background-color: var(--primary-clr);
+    margin: 8px 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-clr);
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+h1 {
+    line-height: 1.2;
+    letter-spacing: 1.6px;
+    font-size: 3rem;
+    font-family: "Tilt Warp", cursive;
+    color: var(--primary-clr);
+    margin-bottom: 0.5em;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+p {
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    margin-bottom: 1em;
+}
+
+nav {
+    align-items: center;
+    background-color: var(--light-clr);
+    color: var(--primary-clr);
+    padding-block: 1em;
+}
+
+section {
+    margin-block: 16em;
+}
+
+section h2,
+section h3,
+section h4,
+section ul {
+    text-align: center;
+    font-weight: 500;
+}
+
+section ul {
+    margin-bottom: 4em;
+}
+
+.tilt {
+    font-family: "Tilt Warp", cursive;
+}
+
+.nav {
+    align-items: center;
+}
+
+.container {
+    max-width: 1124px;
+    padding-inline: 2em;
+    margin-inline: auto;
+}
+
+.btn {
+    font-weight: 500;
+    margin-bottom: 1em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    border-radius: var(--border);
+    display: inline-block;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap: 4em;
+    min-height: 80vh;
+    place-content: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-clr);
+    color: var(--light-clr);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-clr);
+    color: var(--light-clr);
+}
+
+.badge-primary {
+    background-color: var(--primary-clr);
+    color: var(--light-clr);
+}
+
+.badge-secondary {
+    background-color: var(--secondary-clr);
+    color: var(--light-clr);
+}
+
+.badge-accent {
+    background-color: var(--neutral-clr);
+    color: var(--primary-clr);
+    font-size: 0.8rem;
+}
+
+.badge-accent span {
+    font-size: 1.1rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap);
+}
+
+.flex-cen {
+    justify-content: center;
+}
+
+.flex-bet {
+    justify-content: space-between;
+}
+
+.text-lg {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.badge {
+    text-align: center;
+    padding: 0.1em 0.2em;
+    border-radius: var(--border-sm);
+}
+
+.grid {
+    display: grid;
+    gap: 10em var(--gap);
+}
+
+.grid-col-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-col-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    border-radius: var(--border);
+    background-color: var(--light-clr);
+    color: var(--primary-clr);
+}
+
+.card__atas {
+    padding-inline: 2em;
+    position: relative;
+    max-height: 220px;
+    bottom: -80px;
+    color: var(--light-clr);
+}
+
+.rotate-45 {
+    rotate: 45deg;
+}
+.rotate-90 {
+    rotate: 90deg;
+}
+.rotate-180 {
+    rotate: 180deg;
+}
+
+.meter {
+    transition: all 0.5s ease-in-out;
+}
+
+.paket {
+    position: absolute;
+    top: -140px;
+}
+
+.card__meter * {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.card__feat {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(60px);
+}
+
+.card__feat * {
+    margin: 0;
+    line-height: 1;
+}
+
+.card__meter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.card h2 {
+    font-family: "Tilt Warp", cursive;
+    font-weight: 700;
+}
+
+.card__tengah {
+    padding: 2em 2em;
+    position: relative;
+}
+
+.card__tengah hr {
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+}
+
+.grid__noygap {
+    gap: var(--gap);
+}
+
+.card__ideal {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.card__ideal p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--light-clr);
+}
+
+.card__ideal img {
+    margin: 0;
+}
+
+.card__ba {
+    background-color: var(--light-clr);
+    padding: 2em;
+    border-bottom-left-radius: var(--border);
+    border-bottom-right-radius: var(--border);
+}
+
+.card__ba hr {
+    border-radius: var(--border-sm);
+}
+
+.card__ba ul {
+    list-style-image: disc;
+    margin: 1.5em 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.card__ba li {
+    text-align: left;
+    list-style-image: url(img/icon-new-check.svg);
+}
+
+#bonus h4 {
+    padding: 2em 1em;
+    color: var(--light-clr);
+    background-color: var(--secondary-clr);
+    border-radius: var(--border);
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    max-width: 200px;
+    animation: muter 200ms infinite;
+}
+
+@keyframes muter {
+    0% {
+        transform: rotate(-4px);
+    }
+    100% {
+        transform: rotate(-4px);
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--light-clr);
+    color: var(--primary-clr);
+    padding-block: 4em;
+}
+
+.no-gap {
+    gap: 1em;
+}
+
+.card h4 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.no-bet {
+    justify-content: start;
+}
+
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+    margin: 0 auto;
+}
+
+.tabset .tab-panels {
+    grid-area: 2 / 1 / 2 / 4;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+}
+.tabset > label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid transparent;
+    border-radius: var(--border-sm);
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tabset > label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+    color: #06c;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+    background: #06c;
+}
+
+.tabset > input:checked + label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.tabset {
+    max-width: 65em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.tab-panel:not(:last-of-type) {
+    display: none;
+    margin: 5px 0;
+}
+
+.tab-panel:target {
+    display: block;
+}
+
+.tab-panel:target ~ .tab-panel:last-of-type {
+    display: none;
+}
+
+@media (max-width: 628px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .items {
+        text-align: center;
+        display: none;
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    .nav {
+        align-items: normal;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .grid-col-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-col-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .no-gap {
+        gap: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .card h4 {
+        font-size: 1.6rem;
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        place-content: unset;
+    }
+
+    #hero h1 {
+        margin-top: 0.5em;
+    }
+}
