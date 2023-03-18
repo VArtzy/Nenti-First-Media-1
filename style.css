@@ -598,4 +598,16 @@ footer {
     #hero h1 {
         margin-top: 0.5em;
     }
+
+    .meter-1 {
+        rotate: 45deg;
+    }
+
+    .meter-2 {
+        rotate: 90deg;
+    }
+
+    .meter-3 {
+        rotate: 180deg;
+    }
 }
